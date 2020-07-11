@@ -6,3 +6,15 @@ font-size: smaller;
     background-color: red;
     color:#ffffff;
 }
+
+.contenedor{
+display: :flex;
+padding: 10px;
+margin: auto;
+width: 80% ;
+height: 200px;
+}
+
+.contenedor:hover{
+    background-color: red;
+}
