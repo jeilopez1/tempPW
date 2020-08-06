@@ -1,161 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/estilos.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto;
-  border: 1px solid #888;
-  width: 80%; 
-}
-
-
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/Estilos.css">
 </head>
 <body>
-
-
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Boton de Inicio de Sesion</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="pagina1.html" >
-    <div class="imgcontainer">
-      
+<div class="CalculadoradelaNASA">
+    <div class="Output">
+        <div id="Operacion"></div>
     </div>
+        <div class="teclado">
+            <div class="numeros">
+                <div >
+                    <button id="siete">7</button>
+                    <button id="ocho">8</button>
+                    <button id="nueve">9</button>
+                </div>
+                <div>
+                    <button id="cuatro">4</button>
+                    <button id="cinco">5</button>
+                    <button id="seis">6</button>
+                </div>
+                <div>
+                    <button id="uno">1</button>
+                    <button id="dos">2</button>
+                    <button id="tres">3</button>
+                </div>
+                <div>
+                    <button id="ce">CE</button>
+                    <button id="cero">0</button>
+                    <button id="igual">=</button>
+                </div>
 
-    <div class="container">
-      <label for="uname"><b>Usuario</b></label>
-      <input type="text" placeholder="Ingresa el Usuario" name="uname" id="textUser"  Necesario>
-
-      <label for="psw"><b>Contraseña</b></label>
-      <input type="password" placeholder="Ingresa La contraseña" name="psw" id="txtPass" Necesario>
+            </div>
+               
+            <div class="Operaciones">
+                <button id="suma">+</button>
+                <button id="resta">-</button>
+                <button id="multiplicacion">x</button>
+                 <button id="division">÷</button>
+            </div>
         
-      <button type="button" onclick="login()">Aceptar</button>
-      <label name="mensaje" id="mensaje" fo r="">LAKJSDFLKJ</label>
-      
-    </div>
+        </div>
+        
+        <div class="Imprimir">
+            <div>
+            <button id="ImprimirEnPantalla">Imprimir</button>
+            </div>
+            </div>  
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-      <span class="psw">Perdiste la  <a href="#">Contraseña?</a></span>
-    </div>
-  </form>
+
 </div>
-<script src="js/funciones.js"></script>
+<script src="/js/Operaciones.js"></script>
 </body>
 </html>
